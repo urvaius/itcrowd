@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/welcomestring"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvwelcome"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/itcrowd2" />
+
+    <Button
+        android:id="@+id/bCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Compute" />
+
+    <Button
+        android:id="@+id/bMilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Milk" />
+
+    <Button
+        android:id="@+id/bReboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reboot Tech" />
+
+    <Button
+        android:id="@+id/bDataHook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignParentTop="true"
+        android:text="Data Hook" />
+
+    <Button
+        android:id="@+id/bInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bCompute"
+        android:layout_marginTop="50dp"
+        android:text="Internet" />
+
+    <Button
+        android:id="@+id/bInfected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bInternet"
+        android:layout_alignBottom="@+id/bInternet"
+        android:layout_alignParentLeft="true"
+        android:text="Infected" />
+
+    <Button
+        android:id="@+id/bRam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bInfected"
+        android:layout_marginTop="70dp"
+        android:text="Ram" />
+
+    <Button
+        android:id="@+id/bEye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bRam"
+        android:layout_alignBottom="@+id/bRam"
+        android:layout_alignParentRight="true"
+        android:text="Eye" />
+
+    <Button
+        android:id="@+id/bLuke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginRight="35dp"
+        android:text="Luke" />
+
+    <Button
+        android:id="@+id/bStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bEye"
+        android:layout_alignRight="@+id/tvwelcome"
+        android:text="Stop" />
+
+</RelativeLayout>
